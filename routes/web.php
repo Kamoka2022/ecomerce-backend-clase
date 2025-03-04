@@ -1,18 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
+Route::get('/', HomeController::class );
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::prefix('/products')->controller(ProductController::class)->group(function(){
 
-
-Route::get('/<products', function () {
-    echo 'LISTADO DE PRODUCTOS DEL ECOMERCE';
-});
-
-
-Route::get('/products/{name}', function ($name) {
-    echo 'EL PRODUCTO ES:', $name;
-});
-
+Route::get('/',  'index');
+Route::get('/create',  'create' );
+Route::get('/show', 'show');});
