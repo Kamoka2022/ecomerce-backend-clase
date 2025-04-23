@@ -5,45 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('name')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #fff5e6;
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            background-color: #ff8800 !important;
-        }
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
-        .form-container {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .footer {
-            background-color: #ff8800;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 1.2rem;
-        }
-        .logo {
-            height: 80px;
-            margin-right: 15px;
-        }
-        .btn-primary {
-            background-color: #ff8800;
-            border-color: #ff8800;
-        }
-        .btn-primary:hover {
-            background-color: #e67e22;
-            border-color: #e67e22;
-        }
-    </style>
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
